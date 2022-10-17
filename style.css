@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: rgb(230, 207, 31);
+	background: linear-gradient(
+		0deg,
+		rgba(230, 207, 31, 1) 0%,
+		rgba(30, 80, 144, 1) 100%
+	);
+}
+
+.wrapper {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+	padding: 30px;
+	margin: 0px 30px;
+	width: 660px;
+}
+
+#img2 {
+	width: 70%;
+	height: auto;
+}
+
+.left,
+.right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading {
+	display: flex;
+	align-items: baseline;
+}
+
+.heading h2 {
+	color: rgba(0, 128, 0, 0.5);
+	font-size: 2rem;
+	margin: 0px;
+}
+
+.heading p {
+	font-weight: 700;
+	color: rgba(0, 0, 128, 0.7);
+	margin: 0px;
+}
+
+.right a {
+	text-decoration: none;
+	margin: 0px 0px 10px;
+	font-size: 0.9em;
+}
+
+input {
+	flex: 1;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	box-shadow: none;
+	border-radius: 0px 30px 30px 0px;
+	padding: 15px 30px 15px 0px;
+	outline: none;
+}
+
+.right form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-self: stretch;
+	justify-content: space-between;
+	height: 160px;
+}
+
+.input-wrapper {
+	display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+}
+
+.input-icon {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	border-radius: 30px 0px 0px 30px;
+	color: rgba(128, 128, 128, 1);
+
+}
+
+.right button {
+	background-color: rgba(0, 128, 0, 0.5);
+	box-shadow: none;
+	border: none;
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+.forgot {
+	font-size: 0.9em;
+	margin-top: 1px;
+}
+
+@media screen and (max-width: 760px) {
+	.card {
+		flex-direction: column;
+		width: 400px;
+	}
+	.right{
+		align-self: stretch;
+	}
+}
